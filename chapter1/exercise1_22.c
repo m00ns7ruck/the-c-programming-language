@@ -20,9 +20,9 @@ int main() {
 }
 
 int getline_(char line[], int lim, int maxCol) {
-    int c, i, j, lastWhitespace = -1;
+    int c, i;
 
-    for(i = 0, j = 0; (i < lim) && ((c = getchar()) != EOF) && (c != '\n'); ++i, ++j) {
+    for(i = 0; (i < lim) && ((c = getchar()) != EOF) && (c != '\n'); ++i) {
         line[i] = c;
     }
 
